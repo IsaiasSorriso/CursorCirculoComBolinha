@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cursor.css">
+    <title>Cursor Circulo com Bolinha no Meio</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cursor Follow on Mouse Move</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error modi tenetur necessitatibus aspernatur itaque minus quam recusandae qui earum facilis repudiandae quo harum consequuntur iure voluptates numquam, excepturi dolores. Aperiam?
+        </p>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor = document.querySelector('.cursor');
+        var cursor2 = document.querySelector('.cursor2');
+        document.addEventListener('mousemove', function(e){
+            cursor.style.cssText = cursor2.style.cssText ="left: " + e.clientX + "px; top:" + e.clientY + "px;"
+        })
+    </script>
+</body>
+</html>
